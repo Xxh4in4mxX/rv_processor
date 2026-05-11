@@ -16,7 +16,7 @@ module m_circuit1(
     end
 
     am_imem i_am_imem(
-        .w_pc(n_pc),
+        .w_pc(r_pc),
         .w_ir(w_ir)
     );
 endmodule
