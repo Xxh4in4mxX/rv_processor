@@ -5,7 +5,7 @@ module m_proc3(
     );
     wire  [31:0]  w_npc, w_ir, w_r1, w_r2, w_rWB, w_imm, w_s2;
     wire          w_r, w_i, w_s, w_b, w_u, w_j, w_ld;
-    reg   [31:0]  r_pc = 0, r_x1 = 3;
+    reg   [31:0]  r_pc = 0;
     m_adder   m2(.w_in1(32'd4), .w_in2(r_pc), .w_out(w_npc));
     am_imem   m3(.w_pc(r_pc), .w_insn(w_ir));
     m_rf      m4(
