@@ -19,7 +19,7 @@ module m_proc3(
         .w_wd(w_rWB)
     );
     m_gen_imm   m5(w_ir,w_r,w_i,w_s,w_b,w_u,w_j,w_ld,w_imm);
-    m_mulp      m6(w_r1,w_r2,w_i,w_s2);
+    m_mulp      m6(w_r1,w_imm,w_i,w_s2);
     m_adder     m7(.w_in1(w_r1), .w_in2(w_s2), .w_out(w_rWB));
     always @(posedge w_clk) r_pc <= w_npc;
 endmodule
