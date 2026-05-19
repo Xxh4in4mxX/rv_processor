@@ -14,7 +14,7 @@ module m_get_type(
     );
     assign    w_r = (opcode5 == 5'b01100);
     assign    w_s = (opcode5 == 5'b01000);
-    assign    w_b = (opcode5 == 5'b01100);
+    assign    w_b = (opcode5 == 5'b11000);
     assign    w_u = (opcode5 == 5'b00101 || opcode5==5'b01101);
     assign    w_j = (opcode5 == 5'b11011);
     assign    w_i = ~ (w_r | w_s | w_b | w_u | w_j);
